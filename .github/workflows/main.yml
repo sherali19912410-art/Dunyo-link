@@ -1,0 +1,14 @@
+name: DUNYO LINK APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get files
+        uses: actions/checkout@v4
+
+      - name: Check project
+        run: ls -la
